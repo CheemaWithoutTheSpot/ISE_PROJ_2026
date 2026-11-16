@@ -1,0 +1,32 @@
+{
+  "name": "backend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "migrate": "node src/scripts/migrate.js",
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.16",
+    "@electric-sql/pglite-socket": "^0.2.19",
+    "supertest": "^7.3.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "connect-pg-simple": "^10.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "file-type": "^21.0.0",
+    "helmet": "^8.1.0",
+    "jszip": "^3.10.1",
+    "mammoth": "^1.10.0",
+    "multer": "^2.0.2",
+    "pg": "^8.16.3",
+    "pdfjs-dist": "^6.2.108",
+    "word-extractor": "^1.0.4"
+  }
+}
